@@ -14,6 +14,7 @@
 		A44BCD062A1E7BCA00ABA776 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BCD052A1E7BCA00ABA776 /* ActivityItem.swift */; };
 		A44BCD082A1E7BD500ABA776 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BCD072A1E7BD500ABA776 /* Activities.swift */; };
 		A48A942D2A1E88D000685D79 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A942C2A1E88D000685D79 /* AddView.swift */; };
+		A48A942F2A1EA19800685D79 /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A942E2A1EA19800685D79 /* ActivityDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A44BCD052A1E7BCA00ABA776 /* ActivityItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
 		A44BCD072A1E7BD500ABA776 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		A48A942C2A1E88D000685D79 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		A48A942E2A1EA19800685D79 /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				A44BCCF72A1E6FB000ABA776 /* HabitTrackApp.swift */,
 				A44BCCF92A1E6FB000ABA776 /* ContentView.swift */,
+				A48A942E2A1EA19800685D79 /* ActivityDetailView.swift */,
 				A48A942C2A1E88D000685D79 /* AddView.swift */,
 				A44BCD052A1E7BCA00ABA776 /* ActivityItem.swift */,
 				A44BCD072A1E7BD500ABA776 /* Activities.swift */,
@@ -148,6 +151,7 @@
 			files = (
 				A44BCD082A1E7BD500ABA776 /* Activities.swift in Sources */,
 				A44BCD062A1E7BCA00ABA776 /* ActivityItem.swift in Sources */,
+				A48A942F2A1EA19800685D79 /* ActivityDetailView.swift in Sources */,
 				A48A942D2A1E88D000685D79 /* AddView.swift in Sources */,
 				A44BCCFA2A1E6FB000ABA776 /* ContentView.swift in Sources */,
 				A44BCCF82A1E6FB000ABA776 /* HabitTrackApp.swift in Sources */,

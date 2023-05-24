@@ -26,7 +26,7 @@ struct AddView: View {
         var body: some View {
             Text(emoji)
                 .font(.system(size: 50))
-                .padding(5)
+                .padding(10)
                 .background(isSelected ? .accentColor : Color.clear)
                 .clipShape(Circle())
                 .onTapGesture(perform: onTap)
@@ -37,7 +37,7 @@ struct AddView: View {
         NavigationStack {
             // EmojiPicker:
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 20) {
+                HStack(spacing: 10) {
                     ForEach(emojis, id: \.self) { emoji in
                         EmojiView(emoji: emoji, isSelected: emoji == selectedEmoji) {
                             selectedEmoji = emoji
@@ -47,8 +47,12 @@ struct AddView: View {
                 .padding()
             }
             Form {
-                TextField("Activity title", text: $title)
-                TextField("Activity description", text: $description)
+                Section("Title") {
+                    TextField("Smile today", text: $title)
+                }
+                Section("Description") {
+                    TextField("A little more each day", text: $description)
+                }
             }
             .navigationTitle("Add new activity")
             .toolbar {

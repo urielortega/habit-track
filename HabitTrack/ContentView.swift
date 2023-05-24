@@ -15,11 +15,15 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(activities.items) { item in
-                    HStack {
-                        Text(item.emoji)
-                            .frame(width: 50, height: 50)
-                            .background(.regularMaterial, in: Circle())
-                        Text(item.title)
+                    NavigationLink {
+                        ActivityDetailView(activity: item)
+                    } label: {
+                        HStack {
+                            Text(item.emoji)
+                                .frame(width: 50, height: 50)
+                                .background(.regularMaterial, in: Circle())
+                            Text(item.title)
+                        }
                     }
                 }
                 .onDelete(perform: removeItems)
