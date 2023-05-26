@@ -13,4 +13,6 @@ struct ActivityItem: Identifiable, Codable, Equatable {
     let title: String
     let description: String
     var emoji = "🌟"
+    
+    var completionCounter = 0
 }
