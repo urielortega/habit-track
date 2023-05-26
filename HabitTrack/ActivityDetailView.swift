@@ -21,6 +21,7 @@ struct ActivityDetailView: View {
                     .font(.system(size: 40, weight: .semibold, design: .rounded))
                 Text(activity.description)
                     .font(.subheadline)
+                    .foregroundColor(.secondary)
                 
                 Spacer()
             }
@@ -39,7 +40,7 @@ struct ActivityDetailView: View {
                 Button {
                     incrementActivityCounter()
                 } label: {
-                    RoundedMaterialButton()
+                    RoundedMaterialButton(activity: activity)
                 }
                 .padding()
             }
@@ -69,8 +70,11 @@ struct ActivityDetailView_Previews: PreviewProvider {
 }
 
 struct RoundedMaterialButton: View {
+    let activity: ActivityItem
+
     var body: some View {
-        Text("Add another one!")
+        // Text("Add another one!")
+        Text(activity.completionCounter == 0 ? "Add the first one!" : "Add another one!")
             .font(.title2.bold())
             .frame(maxWidth: .infinity, maxHeight: 60)
             .background(.regularMaterial)
