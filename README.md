@@ -15,3 +15,6 @@ A SwiftUI app to track personal habits. The app uses `@StateObject` to share dat
 
 ## How to Use
 Clone the repository and open the project in Xcode. Run the app to start tracking your habits. Habit data will be saved and reloaded on app launch, using `UserDefaults`.
+
+## Acknowledgments  
+This project idea was originally proposed as part of the 100 Days of SwiftUI course by [Paul Hudson](https://github.com/twostraws). The solution implemented here reflects my personal approach, design decisions, and coding style.
